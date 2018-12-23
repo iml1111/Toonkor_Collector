@@ -171,6 +171,9 @@ git: github.com/iml1111</string>
           <property name="text">
            <string>PDF 파일</string>
           </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
          </widget>
         </item>
         <item>

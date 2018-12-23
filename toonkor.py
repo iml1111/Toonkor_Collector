@@ -92,6 +92,7 @@ class Ui_MainWindow(object):
         self.verticalLayout = QtWidgets.QVBoxLayout()
         self.verticalLayout.setObjectName("verticalLayout")
         self.pdf_btn = QtWidgets.QRadioButton(self.centralwidget)
+        self.pdf_btn.setChecked(True)
         self.pdf_btn.setObjectName("pdf_btn")
         self.verticalLayout.addWidget(self.pdf_btn)
         self.img_btn = QtWidgets.QRadioButton(self.centralwidget)
@@ -116,13 +117,13 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "툰코 만화 수집기 Ver 0.1"))
         self.label_3.setText(_translate("MainWindow", "주소:"))
-        self.domain_edit.setText(_translate("MainWindow", "https://toonkor.mom"))
+        self.domain_edit.setText(_translate("MainWindow", "https://toonkor.men"))
         self.label.setText(_translate("MainWindow", "Toonkor Collector"))
-        self.label_2.setText(_translate("MainWindow", "HI, I'M IML!\n"
+        self.label_2.setText(_translate("MainWindow", "Author: IML\n"
 "email: shin10256@gmail.com\n"
-"git: github.com/iml1111"))
+"git: github.com\n/iml1111/Toonkor_Collector"))
         self.search_btn.setText(_translate("MainWindow", "검색"))
         self.checkBox.setText(_translate("MainWindow", "모두 선택"))
         self.pdf_btn.setText(_translate("MainWindow", "PDF 파일"))
