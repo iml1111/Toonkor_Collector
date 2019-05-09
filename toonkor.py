@@ -117,9 +117,9 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "툰코 만화 수집기 Ver 0.1"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "툰코 만화 수집기 Ver 0.2"))
         self.label_3.setText(_translate("MainWindow", "주소:"))
-        self.domain_edit.setText(_translate("MainWindow", "https://toonkor.men"))
+        self.domain_edit.setText(_translate("MainWindow", "https://toonkor.plus"))
         self.label.setText(_translate("MainWindow", "Toonkor Collector"))
         self.label_2.setText(_translate("MainWindow", "Author: IML\n"
 "email: shin10256@gmail.com\n"

@@ -31,7 +31,8 @@ class thr_search(threading.Thread):
 			url = "/bbs/search.php?sfl=wr_subject%7C%7Cwr_content&stx="
 			try:
 				html = self.window.url_parser(self.window.domain_edit.text() + url + element).text
-			except:
+			except Exception as er:
+				self.window.label_2.setText(str(er))
 				self.error = 1
 				return
 			try:
@@ -197,13 +198,14 @@ class Toonkor(QMainWindow, Ui_MainWindow):
 				self.toon_view.item(index).setCheckState(Qt.Unchecked)
 
 	def url_parser(self, url):
+		'''
 		header = {
 			"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5)\
 			AppleWebKit 537.36 (KHTML, like Gecko) Chrome",
 			"Accept":"text/html,application/xhtml+xml,application/xml;\
-			q=0.9,imgwebp,*/*;q=0.8",
-			"Referer": self.domain_edit.text()}
-		req = requests.get(url,verify = False ,headers = header)
+			q=0.9,imgwebp,*/*;q=0.8"}
+		'''
+		req = requests.get(url)
 		return req
 
 	def toon_get_source(self,driver, url, per):
