@@ -4,7 +4,7 @@ import requests.certs
 os.environ['REQUESTS_CA_BUNDLE'] = os.path.join(os.getcwd(), "cacert.pem")
 
 buildOptions = dict(
-	packages = ["PyQt5","sys","bs4","requests","selenium","os","queue",\
+	packages = ["sys","bs4","requests","selenium","os","queue",\
     "PIL","idna.idnadata","shutil","threading","xml","ssl"], 
 	excludes = ["tkinter", "sqlite3"])
 
